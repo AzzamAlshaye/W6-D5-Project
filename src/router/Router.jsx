@@ -1,16 +1,17 @@
 // src/router/Router.jsx
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import HomePage from "../pages/HomePage";
 import AboutUs from "../pages/AboutUs";
-import ContactUs from "../pages/Jobs";
-import GamePage from "../pages/GamePage";
+import Jobs from "../pages/Jobs";
+import SupportHome from "../pages/SupportHome";
 
 function RootLayout() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
-      <Navbar />
+      <NavBar />
       <main className="flex-grow">
         <Outlet />
       </main>
@@ -24,21 +25,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     children: [
-      { index: true, element: <GamePage /> },
-      // {
-      //   path: "games",
-      //   element: <GamesLayout />,
-      //   children: [
-      //     { index: true, element: <GamePage /> },
-      //     { path: "action", element: <ActionPage /> },
-      //     { path: "adventure", element: <AdventurePage /> },
-      //     { path: "rpg", element: <RpgPage /> },
-      //     { path: "strategy", element: <StrategyPage /> },
-      //     { path: "sports", element: <SportsPage /> },
-      //   ],
-      // },
-      { path: "about", element: <AboutUs /> },
-      { path: "contact", element: <ContactUs /> },
+      { index: true, element: <HomePage /> },
+      { path: "about-us", element: <AboutUs /> },
+      { path: "jobs", element: <Jobs /> },
+      { path: "support-home", element: <SupportHome /> },
     ],
   },
 ]);
