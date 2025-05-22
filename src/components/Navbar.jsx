@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router"; // make sure you have react-router
 import { IoMenuSharp } from "react-icons/io5";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -11,12 +12,12 @@ export default function NavBar() {
 
   return (
     <header className="bg-black text-white fixed inset-x-0 top-0 z-50">
-      {/* ===== Desktop / Tablet (≥md) ===== */}
-      <div className="hidden md:flex items-center justify-between container mx-auto px-6 py-4">
+      {/* ===== Desktop / Tablet (≥lg) ===== */}
+      <div className="hidden lg:flex items-center justify-around container mx-auto px-6 py-4">
         <div className="flex items-center space-x-12">
           {/* Logo → Home */}
           <Link to="/" aria-label="Activision home">
-            <img src="logo.png" alt="Activision logo" className="h-6" />
+            <img src="logo.png" alt="Activision logo" className="h-8" />
           </Link>
 
           {/* Main nav */}
@@ -32,11 +33,7 @@ export default function NavBar() {
               </li>
 
               {/* About */}
-              <li
-                className="relative"
-                onMouseEnter={() => setAboutOpen(true)}
-                onMouseLeave={() => setAboutOpen(false)}
-              >
+              <li className="relative">
                 <button
                   onClick={() => setAboutOpen((o) => !o)}
                   aria-haspopup="true"
@@ -71,11 +68,7 @@ export default function NavBar() {
               </li>
 
               {/* Careers */}
-              <li
-                className="relative"
-                onMouseEnter={() => setCareersOpen(true)}
-                onMouseLeave={() => setCareersOpen(false)}
-              >
+              <li className="relative">
                 <button
                   onClick={() => setCareersOpen((o) => !o)}
                   aria-haspopup="true"
@@ -110,11 +103,7 @@ export default function NavBar() {
               </li>
 
               {/* Support */}
-              <li
-                className="relative"
-                onMouseEnter={() => setSupportOpen(true)}
-                onMouseLeave={() => setSupportOpen(false)}
-              >
+              <li className="relative">
                 <button
                   onClick={() => setSupportOpen((o) => !o)}
                   aria-haspopup="true"
@@ -163,29 +152,38 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* ===== Mobile (≤md) ===== */}
-      <div className="flex md:hidden items-center justify-between container mx-auto px-6 py-4">
+      {/* ===== Mobile (≤lg) ===== */}
+      <div className="flex lg:hidden items-center relative container mx-auto px-6 py-8 justify-center">
+        {/* Burger on the left */}
         <button
           onClick={() => setMobileOpen((o) => !o)}
           aria-label="Toggle Mobile Menu"
           aria-expanded={mobileOpen}
-          className="flex flex-col justify-between h-6 w-6"
+          className="absolute left-1 flex flex-col justify-between h-15 w-15"
         >
-          <IoMenuSharp className="text-2xl" />
+          <IoMenuSharp className="text-8xl" />
         </button>
 
-        <Link to="/" aria-label="Activision home">
-          <img src="logo.png" alt="Activision logo" className="h-6" />
+        {/* Logo centered */}
+        <Link
+          to="/"
+          aria-label="Activision home"
+          className="absolute left-1/2 transform -translate-x-1/2"
+        >
+          <img src="logo.png" alt="Activision logo" className="h-8" />
         </Link>
       </div>
 
       {/* Full-height mobile panel */}
       {mobileOpen && (
-        <div className="md:hidden bg-black text-white border-t border-gray-800 h-screen overflow-auto">
+        <div className="lg:hidden bg-black text-white border-t border-gray-800 h-screen overflow-auto">
           <nav>
             <ul className="space-y-4 px-6 py-6">
               <li>
-                <Link to="" className="block hover:underline">
+                <Link
+                  to=""
+                  className="block hover:underline pb-6 border-b border-gray-400"
+                >
                   Games
                 </Link>
               </li>
@@ -194,9 +192,13 @@ export default function NavBar() {
               <li>
                 <button
                   onClick={() => setAboutOpen((o) => !o)}
-                  className="w-full flex items-center justify-between hover:underline"
+                  className="w-full flex items-center justify-between hover:underline pb-6 border-b border-gray-400"
                 >
-                  About <span className={aboutOpen ? "rotate-180" : ""}>▼</span>
+                  About{" "}
+                  <span className={aboutOpen ? "rotate-180" : ""}>
+                    {" "}
+                    <MdKeyboardArrowDown className="text-2xl" />
+                  </span>
                 </button>
                 {aboutOpen && (
                   <ul className="mt-2 space-y-2 pl-4">
@@ -214,10 +216,12 @@ export default function NavBar() {
               <li>
                 <button
                   onClick={() => setCareersOpen((o) => !o)}
-                  className="w-full flex items-center justify-between hover:underline"
+                  className="w-full flex items-center justify-between hover:underline pb-6 border-b border-gray-400"
                 >
                   Careers{" "}
-                  <span className={careersOpen ? "rotate-180" : ""}>▼</span>
+                  <span className={careersOpen ? "rotate-180" : ""}>
+                    <MdKeyboardArrowDown className="text-2xl" />
+                  </span>
                 </button>
                 {careersOpen && (
                   <ul className="mt-2 space-y-2 pl-4">
@@ -235,10 +239,12 @@ export default function NavBar() {
               <li>
                 <button
                   onClick={() => setSupportOpen((o) => !o)}
-                  className="w-full flex items-center justify-between hover:underline"
+                  className="w-full flex items-center justify-between hover:underline pb-6 border-b border-gray-400"
                 >
                   Support{" "}
-                  <span className={supportOpen ? "rotate-180" : ""}>▼</span>
+                  <span className={supportOpen ? "rotate-180" : ""}>
+                    <MdKeyboardArrowDown className="text-2xl" />
+                  </span>
                 </button>
                 {supportOpen && (
                   <ul className="mt-2 space-y-2 pl-4">
@@ -257,20 +263,12 @@ export default function NavBar() {
             </ul>
           </nav>
 
-          {/* SSO*/}
-          <div className="flex flex-col space-y-3 px-6 pb-6 border-t border-gray-800">
-            <a
-              href="https://s.activision.com/activision/login?redirectUrl=https://www.activision.com/games"
-              className="block hover:underline"
-            >
-              Login
-            </a>
-            <a
-              href="https://s.activision.com/activision/register"
-              className="block hover:underline"
-            >
+          {/* SSO */}
+          <div className="flex items-center space-x-6 justify-center py-6">
+            <button className="px-4 py-0.5 border-2 border-[#0a5893] bg-[#0f3a5d] rounded-3xl font-extrabold hover:bg-[#0c4c7c]">
               Sign Up
-            </a>
+            </button>
+            <button className="text-[#a6a9aa] font-bold">Login</button>
           </div>
         </div>
       )}
