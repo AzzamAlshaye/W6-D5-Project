@@ -3,6 +3,7 @@ import AboutHeroSection from "./AboutHeroSection";
 import AboutOurStorySection from "./About-our-Story";
 import OurValuesSection from "./OurValues";
 import OurLeadership from "./OurLeadership";
+import OurGames from "./OurGames";
 // import HelpSection from "../components/HelpSection";
 // import LatestSection from "../components/LatestSection";
 // import TeamsSection from "../components/TeamsSection";
@@ -16,6 +17,7 @@ export default function AboutUs() {
       <AboutOurStorySection />
       <OurValuesSection />
       <OurLeadership />
+      <OurGames />
       {/* Latest News & Articles */}
       {/* <LatestSection tabs={tabs} articles={articles} /> */}
 

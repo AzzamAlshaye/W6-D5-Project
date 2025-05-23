@@ -38,7 +38,7 @@ export default function NavBar() {
                   onClick={() => setAboutOpen((o) => !o)}
                   aria-haspopup="true"
                   aria-expanded={aboutOpen}
-                  className="flex items-center gap-1 text-[#b3b6b7] hover:text-white font-bold"
+                  className="flex items-center gap-1 text-[#b3b6b7] hover:text-white font-bold cursor-pointer"
                 >
                   About
                   <svg
@@ -58,7 +58,7 @@ export default function NavBar() {
                 {aboutOpen && (
                   <ul className="absolute top-full left-0 mt-2 w-48 bg-black ring-1 ring-white/20 space-y-1 p-3">
                     <li>
-                      <Link to="/about-us" className="block hover:underline">
+                      <Link to="/about-us" className="block hover:underline ">
                         About Us
                       </Link>
                     </li>
@@ -73,7 +73,7 @@ export default function NavBar() {
                   onClick={() => setCareersOpen((o) => !o)}
                   aria-haspopup="true"
                   aria-expanded={careersOpen}
-                  className="flex items-center gap-1 text-[#b3b6b7] hover:text-white font-bold"
+                  className="flex items-center gap-1 text-[#b3b6b7] hover:text-white font-bold cursor-pointer"
                 >
                   Careers
                   <svg
@@ -108,7 +108,7 @@ export default function NavBar() {
                   onClick={() => setSupportOpen((o) => !o)}
                   aria-haspopup="true"
                   aria-expanded={supportOpen}
-                  className="flex items-center gap-1 text-[#b3b6b7] hover:text-white font-bold"
+                  className="flex items-center gap-1 text-[#b3b6b7] hover:text-white font-bold cursor-pointer"
                 >
                   Support
                   <svg
@@ -145,10 +145,12 @@ export default function NavBar() {
 
         {/* SSO (external) */}
         <div className="flex items-center space-x-6">
-          <button className="px-4 py-0.5 border-2 border-[#0a5893] bg-[#0f3a5d] rounded-3xl font-extrabold hover:bg-[#0c4c7c]">
+          <button className="px-4 py-0.5 border-2 border-[#0a5893] bg-[#0f3a5d] rounded-3xl font-extrabold hover:bg-[#0c4c7c] cursor-pointer">
             Sign Up
           </button>
-          <button className="text-[#a6a9aa] font-bold">Login</button>
+          <button className="text-[#a6a9aa] font-bold cursor-pointer">
+            Login
+          </button>
         </div>
       </div>
 
