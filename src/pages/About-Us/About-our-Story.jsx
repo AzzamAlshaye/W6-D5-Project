@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutOurStorySection() {
   return (
-    <section id="about-our-story" className="bg-black text-white py-50">
+    <section id="about-our-story" className="bg-black text-white pt-50 pb-20">
       <div className="container mx-auto px-4 flex flex-col space-y-16">
         {/* Our Mission */}
         <div className="flex flex-col items-center text-center">
