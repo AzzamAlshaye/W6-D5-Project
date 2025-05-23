@@ -5,22 +5,22 @@ const tabs = [
   { value: "all", label: "All News" },
   {
     value: "activision",
-    icon: "/content/dam/atvi/activision/atvi-touchui/activision/home/assets/activision-logo-small.svg",
+    icon: "logo.png",
     alt: "Activision",
   },
   {
     value: "call-of-duty",
-    icon: "/content/dam/atvi/activision/atvi-touchui/activision/home/assets/cod-logo.svg",
+    icon: "https://www.activision.com/content/dam/atvi/activision/atvi-touchui/activision/home/assets/cod-logo.svg",
     alt: "Call of Duty",
   },
   {
     value: "tony-hawk",
-    icon: "/content/dam/atvi/activision/atvi-touchui/activision/home/assets/THPS3+4_Logo.svg",
+    icon: "https://www.activision.com/content/dam/atvi/activision/atvi-touchui/activision/home/assets/THPS3+4_Logo.svg",
     alt: "Tony Hawk's Pro Skater 3 + 4",
   },
   {
     value: "crash-bandicoot",
-    icon: "/content/dam/atvi/activision/atvi-touchui/activision/home/assets/crash-bandicoot-logo.png",
+    icon: "https://www.activision.com/content/dam/atvi/activision/atvi-touchui/activision/home/assets/crash-bandicoot-logo.png",
     alt: "Crash Bandicoot 4 It's About Time",
   },
 ];
@@ -31,7 +31,7 @@ const articles = [
     categories: ["all"],
     link: "https://www.callofduty.com/blog/2025/05/call-of-duty-black-ops-6-warzone-season-four-stitch-returns",
     imgUrl:
-      "/content/dam/atvi/callofduty/cod-touchui/blog/hero/BO6-SEASON-04-NARRATIVE-TOUT.jpg",
+      "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/BO6-SEASON-04-NARRATIVE-TOUT.jpg",
     date: "May 20, 2025",
     title: "Stitch Returns in Season 04",
     description:
@@ -42,7 +42,7 @@ const articles = [
     categories: ["all"],
     link: "https://www.callofduty.com/blog/2025/05/call-of-duty-endowment-military-appreciation-month-united-force-got-your-six",
     imgUrl:
-      "/content/dam/atvi/callofduty/cod-touchui/blog/body/code/CODE-MAM-GY6-TOUT.jpg",
+      "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/code/CODE-MAM-GY6-TOUT.jpg",
     date: "May 15, 2025",
     title: "Support C.O.D.E. Military Appreciation Month with USAA",
     description:
@@ -53,7 +53,7 @@ const articles = [
     categories: ["all", "tony-hawk"],
     link: "https://www.tonyhawkthegame.com/blog/2025/05/tony-hawk-pro-skater-three-four-thps-fest-los-angeles",
     imgUrl:
-      "/content/dam/atvi/tony-hawk/blog/chicago/el-rey-blog/THPS-ELREY-IMAGE-TOUT.jpg",
+      "https://www.tonyhawkthegame.com/content/dam/atvi/tony-hawk/blog/chicago/el-rey-blog/THPS-ELREY-IMAGE-TOUT.jpg",
     date: "May 09, 2025",
     title: "Tony Hawk’s Pro Skater 3 + 4: THPS Fest at El Rey Theatre",
     description:
@@ -64,7 +64,7 @@ const articles = [
     categories: ["all"],
     link: "https://www.callofduty.com/blog/2025/05/call-of-duty-black-ops-6-warzone-ricochet-anti-cheat-season-three-recap",
     imgUrl:
-      "/content/dam/atvi/callofduty/cod-touchui/blog/body/ricochet/bo6-season-03-ricochet/COD-BO6-RICOCHET-S03R-TOUT-A.webp",
+      "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/ricochet/bo6-season-03-ricochet/COD-BO6-RICOCHET-S03R-TOUT-A.webp",
     date: "May 07, 2025",
     title: "#TeamRICOCHET Season 03 Recap for Black Ops 6 and Warzone",
     description: "#TeamRICOCHET Season 03 Recap and Update.",
@@ -74,7 +74,7 @@ const articles = [
     categories: ["all"],
     link: "https://www.callofduty.com/blog/2025/05/call-of-duty-endowment-military-appreciation-month",
     imgUrl:
-      "/content/dam/atvi/callofduty/cod-touchui/blog/body/code/CODE-MAM-2025-IMAGE-TOUT.webp",
+      "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/code/CODE-MAM-2025-IMAGE-TOUT.webp",
     date: "May 01, 2025",
     title: "C.O.D.E. celebrates Military Appreciation Month with USAA",
     description:
@@ -85,7 +85,7 @@ const articles = [
     categories: ["all"],
     link: "https://www.callofduty.com/blog/2025/04/call-of-duty-black-ops-6-warzone-zombies-season-three-reloaded-announcement",
     imgUrl:
-      "/content/dam/atvi/callofduty/cod-touchui/blog/hero/bo6/BO6-S03R-ANNOUNCEMENT-TOUT.webp",
+      "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/bo6/BO6-S03R-ANNOUNCEMENT-TOUT.webp",
     date: "Apr 29, 2025",
     title: "Black Ops 6 Season 03 Reloaded: All the Details",
     description:
@@ -96,7 +96,7 @@ const articles = [
     categories: ["call-of-duty"],
     link: "https://blog.activision.com/activision/2024/activision-releases-call-of-duty-warzone-caldera-data-set",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/ATVI-COD-WZ-CALDERA-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/ATVI-COD-WZ-CALDERA-TOUT.jpg",
     date: "Jul 30, 2024",
     title:
       "OpenUSD Caldera Data Set is available for download for academic and non-commercial use",
@@ -107,7 +107,7 @@ const articles = [
     categories: ["activision"],
     link: "https://blog.activision.com/activision/2024/activision-announces-new-studio-elsewhere-entertainment-all-new-franchise-development",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/elsewhere-blog-hero.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/elsewhere-blog-hero.jpg",
     date: "May 16, 2024",
     title:
       "Activision Announces Elsewhere Entertainment, New Studio Formed to Develop All-New Franchise",
@@ -118,7 +118,7 @@ const articles = [
     categories: ["activision"],
     link: "https://blog.activision.com/activision/2020-12/The-Activision-Holiday-Gift-Guide-Crash-Bandicoot",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/CRASH-HOLIDAYGIFTGUIDE-TOUT.jpg",
+      "https://www.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/CRASH-HOLIDAYGIFTGUIDE-TOUT.jpg",
     date: "Dec 02, 2020",
     title: "Holiday Gift Guide: Crash Bandicoot",
     description:
@@ -129,7 +129,7 @@ const articles = [
     categories: ["activision"],
     link: "https://blog.activision.com/activision/2020-12/The-Activision-Holiday-Gift-Guide-Call-of-Duty",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/COD-HOLIDAYGIFTGUIDE-TOUT.jpg",
+      "https://www.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/COD-HOLIDAYGIFTGUIDE-TOUT.jpg",
     date: "Dec 02, 2020",
     title: "Holiday Gift Guide: Call of Duty",
     description:
@@ -140,7 +140,7 @@ const articles = [
     categories: ["activision"],
     link: "https://blog.activision.com/activision/2020-12/Activision-Blizzard-Veterans-Day-of-Service-2020",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/AGB-VDOS-2020-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/AGB-VDOS-2020-TOUT.jpg",
     date: "Dec 01, 2020",
     title: "Activision Blizzard Veterans Day of Service: 2020",
     description:
@@ -151,7 +151,7 @@ const articles = [
     categories: ["activision"],
     link: "https://blog.activision.com/activision/2020-10/Veterans-Day-Finding-Oneself-in-Service-of-Others",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/VDAY-RAMSEY-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/VDAY-RAMSEY-TOUT.jpg",
     date: "Nov 11, 2020",
     title: "Finding Oneself in Service of Others",
     description:
@@ -162,7 +162,7 @@ const articles = [
     categories: ["tony-hawk"],
     link: "https://www.tonyhawkthegame.com/blog/2025/03/tony-hawk-pro-skater-three-plus-four-launch-map-guide-waterpark",
     imgUrl:
-      "/content/dam/atvi/tony-hawk/blog/chicago/launch-map-guide-watermark/THPS-WATERPARK-TOUT.jpg",
+      "https://www.tonyhawkthegame.com/content/dam/atvi/tony-hawk/blog/chicago/launch-map-guide-watermark/THPS-WATERPARK-TOUT.jpg",
     date: "Mar 04, 2025",
     title: "THPS 3 + 4 Bird’s Eye View Preview — Waterpark",
     description:
@@ -173,7 +173,7 @@ const articles = [
     categories: ["crash-bandicoot"],
     link: "https://blog.activision.com/crash-bandicoot/2023/crash-team-rumble-season-3-spyro-elora-announcement",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/CRASH-TEAM-RUMBLE-S3-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/crash-bandicoot/CRASH-TEAM-RUMBLE-S3-TOUT.jpg",
     date: "Dec 07, 2023",
     title:
       "Get all fired up for the winter season with new heroes, maps, and more.",
@@ -184,7 +184,7 @@ const articles = [
     categories: ["crash-bandicoot"],
     link: "https://blog.activision.com/crash-bandicoot/2023/crash-team-rumble-season-2-available-now",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/AGB-CRASH-TR-S02-ANNOUNCEMENT-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/AGB-CRASH-TR-S02-ANNOUNCEMENT-TOUT.jpg",
     date: "Sep 12, 2023",
     title: "Get a sneak peek at what’s to come in Season 2",
     description: "",
@@ -194,7 +194,7 @@ const articles = [
     categories: ["crash-bandicoot"],
     link: "https://blog.activision.com/crash-bandicoot/2023/crash-team-rumble-free-limited-time-access-trial",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-TEAM-RUMBLE-FREE-TRIAL.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-TEAM-RUMBLE-FREE-TRIAL.jpg",
     date: "Aug 09, 2023",
     title: "Crash Team Rumble is Free for a Limited Time",
     description:
@@ -205,7 +205,7 @@ const articles = [
     categories: ["crash-bandicoot"],
     link: "https://blog.activision.com/crash-bandicoot/2023/crash-bandicoot-team-rumble-launch-playstation-xbox-wumpa-fruit",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-LAVA-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-LAVA-TOUT.jpg",
     date: "Jun 20, 2023",
     title: "Get N. Sane with Crash Team Rumble — Live Now",
     description:
@@ -216,7 +216,7 @@ const articles = [
     categories: ["crash-bandicoot"],
     link: "https://blog.activision.com/crash-bandicoot/2023/crash-bandicoot-team-rumble-online-standard-deluxe-editions-battle-pass",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-PRE-ORDER-TEAM-RUMBLE-RETAIL.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-PRE-ORDER-TEAM-RUMBLE-RETAIL.jpg",
     date: "Mar 30, 2023",
     title:
       "Get Ready for an N. Sane Rumble: Pre-Order Crash Team Rumble Online and at Select Retailers!",
@@ -228,7 +228,7 @@ const articles = [
     categories: ["crash-bandicoot"],
     link: "https://blog.activision.com/crash-bandicoot/2022/crash-bandicoot-team-rumble-competitive-multiplayer-coming-soon",
     imgUrl:
-      "/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-LAVA-TOUT.jpg",
+      "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/crash-bandicoot/feature/CRASH-LAVA-TOUT.jpg",
     date: "Dec 09, 2022",
     title: "Crash Team Rumble™ — Coming Soon to Xbox and PlayStation",
     description:
@@ -248,12 +248,15 @@ export default function LatestSection() {
     <section className="bg-gradient-to-b from-[#343434] to-[#000000] py-12 text-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Desktop Tabs */}
-        <div className="hidden md:flex justify-center space-x-8 mb-12">
+        <h1 className="text-center text-3xl font-bold mb-5 ">
+          Latest News & Articles
+        </h1>
+        <div className="hidden lg:flex justify-center space-x-8 mb-12 border-t  border-b border-gray-400 gap-3">
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-4 py-2 text-sm font-semibold rounded ${
+            className={`px-4 py-2 text-2xl font-semibold rounded ${
               activeTab === "all"
-                ? "bg-gray-700 text-white"
+                ? "bg-gray-700 border-b-8 border-[#0668af] text-white"
                 : "text-gray-400 hover:text-white"
             }`}
           >
@@ -265,17 +268,33 @@ export default function LatestSection() {
               onClick={() => setActiveTab(tab.value)}
               className={`p-2 rounded ${
                 activeTab === tab.value
-                  ? "bg-gray-700"
+                  ? "bg-gray-700 border-b-8 border-[#0668af]"
                   : "text-gray-400 hover:text-white"
               }`}
             >
-              <img src={tab.icon} alt={tab.alt} className="h-6 w-auto" />
+              <img src={tab.icon} alt={tab.alt} className="h-8 w-auto" />
             </button>
           ))}
         </div>
 
-        {/* Mobile Tabs */}
-        <div className="flex md:hidden justify-center space-x-4 mb-8 overflow-x-auto">
+        {/* Smallest screens: dropdown */}
+        <div className="sm:hidden mb-8 px-4">
+          <select
+            value={activeTab}
+            onChange={(e) => setActiveTab(e.target.value)}
+            className="w-full bg-gray-800 text-white px-4 py-2 rounded"
+          >
+            <option value="all">All News</option>
+            {tabs.slice(1).map((tab) => (
+              <option key={tab.value} value={tab.value}>
+                {tab.alt}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* sm ↔ lg: icon-buttons */}
+        <div className="hidden sm:flex lg:hidden justify-center space-x-4 mb-8 overflow-x-auto">
           <button
             onClick={() => setActiveTab("all")}
             className={`flex-shrink-0 px-4 py-1 text-sm font-semibold rounded-full ${
