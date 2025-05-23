@@ -11,7 +11,7 @@ export default function NavBar() {
   const [supportOpen, setSupportOpen] = useState(false);
 
   return (
-    <header className="bg-black text-white fixed inset-x-0 top-0 z-50">
+    <header className="bg-black/50 backdrop-blur  text-white fixed inset-x-0 top-0 z-50">
       {/* ===== Desktop / Tablet (≥lg) ===== */}
       <div className="hidden lg:flex items-center justify-around container mx-auto px-6 py-4">
         <div className="flex items-center space-x-12">
