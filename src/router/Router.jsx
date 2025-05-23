@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HomePage from "../pages/home-page/HomePage-Container";
-import AboutUs from "../pages/AboutUs";
+import AboutUs from "../pages/About-Us/AboutUs";
 import Jobs from "../pages/Jobs";
 import SupportHome from "../pages/SupportHome";
 
