@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
-
 const slides = [
   {
     videoSrc:
@@ -88,7 +87,7 @@ export default function AtviHeroContainer() {
       className="relative w-full h-screen overflow-hidden"
       data-analytics-container="hero"
     >
-      {/* sliding wrapper */}
+      {/* Slides */}
       <div
         id="atvi-hero-inner-container"
         className="flex h-full transition-transform duration-700 ease-in-out"
@@ -96,7 +95,7 @@ export default function AtviHeroContainer() {
       >
         {slides.map((slide, idx) => (
           <div key={idx} className="relative w-full h-full flex-shrink-0">
-            {/* background video */}
+            {/* Video */}
             <video
               className="absolute inset-0 w-full h-full object-cover"
               playsInline
@@ -107,70 +106,135 @@ export default function AtviHeroContainer() {
               <source src={slide.videoSrc} type="video/mp4" />
             </video>
 
-            {/* gradient overlay */}
+            {/* Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
 
-            {/* centered content */}
-            <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 h-full">
+            {/* Content */}
+            <div
+              className="
+                relative z-10 h-full
+                flex flex-col justify-center
+                px-4 sm:px-8 md:px-12 lg:px-16
+                max-w-lg
+                mx-auto sm:mx-0
+                items-center sm:items-start
+                text-center sm:text-left
+                text-white
+              "
+            >
               <img
                 src={slide.logoSrc}
                 alt={slide.altLogo}
-                className="mb-6 max-w-md"
+                className="
+                  mb-4
+                  max-w-xs sm:max-w-sm md:max-w-md
+                "
               />
-              <p className="mb-6 whitespace-pre-line text-2xl md:text-3xl font-medium">
+
+              <p
+                className="
+                  mb-4
+                  text-xl sm:text-2xl md:text-3xl
+                  font-medium
+                  whitespace-pre-line
+                "
+              >
                 {slide.copy}
               </p>
-              <div className="flex space-x-6">
+
+              <div
+                className="
+                  flex flex-col sm:flex-row
+                  items-center sm:items-start
+                  space-y-3 sm:space-y-0 sm:space-x-6
+                  mb-6
+                "
+              >
                 <a
                   href={slide.ctas[0].href}
-                  className="cursor-pointer px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full uppercase font-semibold"
+                  className="
+                    cursor-pointer
+                    px-6 py-2 sm:px-8 sm:py-3
+                    bg-blue-600 hover:bg-blue-700
+                    rounded-full
+                    uppercase font-semibold
+                  "
                 >
                   {slide.ctas[0].text}
                 </a>
                 <a
                   href={slide.ctas[1].href}
-                  className="cursor-pointer px-8 py-3 border border-white hover:bg-white hover:text-black rounded-full uppercase font-semibold"
+                  className="
+                    cursor-pointer
+                    px-6 py-2 sm:px-8 sm:py-3
+                    border border-white hover:bg-white hover:text-black
+                    rounded-full
+                    uppercase font-semibold
+                  "
                 >
                   {slide.ctas[1].text}
                 </a>
               </div>
-              <div className="mt-6">
-                <img
-                  src={slide.ratingSrc}
-                  alt={slide.altRating}
-                  className="h-8"
-                />
-              </div>
+
+              <img
+                src={slide.ratingSrc}
+                alt={slide.altRating}
+                className="h-6 sm:h-8"
+              />
             </div>
           </div>
         ))}
       </div>
 
-      {/* prev / next arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+      {/* Dots */}
+      <div
+        className="
+          absolute bottom-4 sm:bottom-6
+          left-1/2 transform -translate-x-1/2
+          flex items-center space-x-3
+          bg-black bg-opacity-50
+          px-10 py-5  lg:px-30 lg:py-5
+          rounded-full
+        "
       >
-        <IoChevronBack size={24} />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
-      >
-        <IoChevronForward size={24} />
-      </button>
-
-      {/* dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+        {/* Arrows */}
+        <button
+          onClick={prevSlide}
+          className="
+          absolute left-2 sm:left-4
+          top-1/2 transform -translate-y-1/2
+          bg-black bg-opacity-50 hover:bg-opacity-75
+          text-white w-8 h-8 sm:w-10 sm:h-10
+          rounded-full flex items-center justify-center
+          cursor-pointer
+        "
+        >
+          <IoChevronBack size={20} />
+        </button>
         {slides.map((_, idx) => (
           <button
             key={idx}
             onClick={() => setCurrent(idx)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              idx === current ? "bg-white" : "bg-white/50"
-            }`}
+            className={`
+              w-2 sm:w-3 h-2 sm:h-3 rounded-full
+              cursor-pointer
+              ${idx === current ? "bg-white" : "bg-white/50"}
+            `}
           />
         ))}
+        <button
+          onClick={nextSlide}
+          className="
+          absolute right-2 sm:right-4
+          top-1/2 transform -translate-y-1/2
+          bg-black bg-opacity-50 hover:bg-opacity-75
+          text-white w-8 h-8 sm:w-10 sm:h-10
+          rounded-full flex items-center justify-center
+          cursor-pointer
+        "
+        >
+          <IoChevronForward size={20} />
+        </button>
       </div>
     </section>
   );
