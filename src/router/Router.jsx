@@ -1,9 +1,9 @@
 // src/router/Router.jsx
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
-import HomePage from "../pages/HomePage";
+import HomePage from "../pages/home-page/HomePage-Container";
 import AboutUs from "../pages/AboutUs";
 import Jobs from "../pages/Jobs";
 import SupportHome from "../pages/SupportHome";
