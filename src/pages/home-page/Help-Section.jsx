@@ -6,9 +6,9 @@ export default function HelpSection() {
       id="atvi-support"
       className="py-12 bg-black text-white border-t border-gray-100"
     >
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+      <div className="  mx-auto px-4 flex flex-col lg:flex-row items-center">
         {/* Text Column */}
-        <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+        <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 lg:ml-15">
           <h3 className="text-3xl font-bold mb-4">We're here to help!</h3>
           <p className="lg- text-xl font-semibold mb-2">
             Get answers to frequently asked questions, check server status, and
@@ -18,7 +18,7 @@ export default function HelpSection() {
             href="https://support.activision.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-15 py-2 border border-white rounded-4xl hover:bg-[#08497a]  hover:border-[#08497a]  text-white font-semibold text-lg"
+            className="inline-block px-15 py-2 border border-white rounded-4xl hover:bg-[#08497a]  hover:border-[#08497a]  text-white font-semibold text-lg transition"
           >
             Visit Support
           </a>

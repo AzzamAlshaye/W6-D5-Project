@@ -128,14 +128,14 @@ export default function AtviHeroContainer() {
                 alt={slide.altLogo}
                 className="
                   mb-4
-                  max-w-xs sm:max-w-sm md:max-w-md
+                  max-w-xs sm:max-w-sm lg:max-w-md
                 "
               />
 
               <p
                 className="
                   mb-4
-                  text-xl sm:text-2xl md:text-3xl
+                  text-xl sm:text-2xl lg:text-3xl
                   font-medium
                   whitespace-pre-line
                   text-center
@@ -195,7 +195,7 @@ export default function AtviHeroContainer() {
           left-1/2 transform -translate-x-1/2
           flex items-center space-x-3
           bg-black/50 backdrop-blur
-          px-10 py-5  lg:px-30 lg:py-5
+          px-20 py-5  lg:px-30 lg:py-5
           rounded-full
         "
       >
