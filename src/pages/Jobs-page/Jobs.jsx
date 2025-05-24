@@ -4,6 +4,7 @@ import { FaUser, FaEnvelope, FaComment, FaPaperPlane } from "react-icons/fa";
 import VideoSection from "./Video-Section";
 import StartCareer from "./StartCareer";
 import ExploreWorld from "./ExploreWorld";
+import SlideVideo from "./Slide-Video";
 
 export default function ContactUs() {
   return (
@@ -11,6 +12,7 @@ export default function ContactUs() {
       <VideoSection />
       <StartCareer />
       <ExploreWorld />
+      <SlideVideo />
     </div>
   );
 }
