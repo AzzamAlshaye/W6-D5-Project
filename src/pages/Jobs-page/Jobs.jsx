@@ -6,6 +6,7 @@ import StartCareer from "./StartCareer";
 import ExploreWorld from "./ExploreWorld";
 import SlideVideo from "./Slide-Video";
 import JobsStudios from "./Job-Studios";
+import BeTheFirst from "./BeTheFirst";
 
 export default function ContactUs() {
   return (
@@ -15,6 +16,7 @@ export default function ContactUs() {
       <ExploreWorld />
       <SlideVideo />
       <JobsStudios />
+      <BeTheFirst />
     </div>
   );
 }
