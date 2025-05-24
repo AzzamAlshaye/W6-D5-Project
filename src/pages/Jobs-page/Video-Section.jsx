@@ -52,7 +52,7 @@ export default function VideoSection() {
         <div className="absolute inset-0 flex items-center justify-center">
           <a
             href="https://careers.activision.com/search-results"
-            className="px-6 py-3 border border-green-500 text-white font-semibold hover:bg-green-600 transition"
+            className="px-6 py-3 border border-green-500 text-white font-semibold hover:bg-green-600 transition bg-[#2b2b2b]"
           >
             SEARCH JOBS
           </a>

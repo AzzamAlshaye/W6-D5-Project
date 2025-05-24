@@ -48,7 +48,7 @@ export default function ExploreWorld() {
                 <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                 <button
                   href={item.link}
-                  className="inline-block px-6 py-2 border border-white rounded-full uppercase text-sm font-medium hover:bg-[#08497a]  transition-colors duration-200"
+                  className="inline-block px-6 py-2 border border-white rounded-full uppercase text-sm font-medium hover:bg-[#08497a]  transition-colors duration-200 cursor-pointer"
                 >
                   Learn More
                 </button>

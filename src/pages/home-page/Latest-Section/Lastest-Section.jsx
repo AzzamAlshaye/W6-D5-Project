@@ -254,7 +254,7 @@ export default function LatestSection() {
         <div className="hidden lg:flex justify-center space-x-8 mb-12 border-t  border-b border-gray-400 gap-3">
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-4 py-2 text-2xl font-semibold rounded ${
+            className={`px-4 py-2 text-2xl cursor-pointer font-semibold rounded  ${
               activeTab === "all"
                 ? "bg-gray-700 border-b-8 border-[#0668af] text-white"
                 : "text-gray-400 hover:text-white"
@@ -266,7 +266,7 @@ export default function LatestSection() {
             <button
               key={tab.value}
               onClick={() => setActiveTab(tab.value)}
-              className={`p-2 rounded ${
+              className={`p-2 rounded cursor-pointer ${
                 activeTab === tab.value
                   ? "bg-gray-700 border-b-8 border-[#0668af]"
                   : "text-gray-400 hover:text-white"

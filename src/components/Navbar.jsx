@@ -23,13 +23,8 @@ export default function NavBar() {
           {/* Main nav */}
           <nav>
             <ul className="flex items-center space-x-8">
-              <li>
-                <Link
-                  to=""
-                  className="text-[#b3b6b7] hover:text-white font-bold"
-                >
-                  Games
-                </Link>
+              <li className="text-[#b3b6b7] hover:text-white font-bold  cursor-pointer">
+                Games
               </li>
 
               {/* About */}

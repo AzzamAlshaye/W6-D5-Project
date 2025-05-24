@@ -124,11 +124,11 @@ export default function SlideSupport() {
                 className="h-16 lg:h-60 object-contain mx-auto lg:mx-0"
               />
             </div>
-            <div className="flex flex-col space-y-4    ">
+            <div className="flex flex-col space-y-4">
               {s.links.map((link, idx) => (
                 <button
                   key={idx}
-                  className="flex items-center space-x-4 hover:scale-102 transition"
+                  className="flex items-center space-x-4 hover:scale-102 transition  cursor-pointer"
                 >
                   <img src={link.icon} alt="" className="h-6 lg:h-8 w-auto" />
                   <span className="uppercase font-semibold text-sm lg:text-base">
@@ -144,13 +144,13 @@ export default function SlideSupport() {
       {/* arrows */}
       <button
         onClick={prev}
-        className="hidden lg:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-20 text-white text-2xl p-2 bg-black/40 rounded-full"
+        className="hidden lg:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-20 text-white text-2xl p-2 bg-black/40 rounded-full  cursor-pointer"
       >
         <FiChevronLeft />
       </button>
       <button
         onClick={next}
-        className="hidden lg:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-20 text-white text-2xl p-2 bg-black/40 rounded-full"
+        className="hidden lg:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-20 text-white text-2xl p-2 bg-black/40 rounded-full  cursor-pointer"
       >
         <FiChevronRight />
       </button>
@@ -165,7 +165,7 @@ export default function SlideSupport() {
               setActive(idx);
             }}
             className={`
-              w-3 h-3 rounded-full transition-colors
+              w-3 h-3 rounded-full transition-colors  cursor-pointer
               ${idx === active ? "bg-white" : "bg-white/50"}
             `}
           />

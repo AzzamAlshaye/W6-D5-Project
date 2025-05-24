@@ -94,7 +94,7 @@ export default function BeTheFirst() {
               </p>
 
               {/* Apply button */}
-              <a
+              <button
                 href={job.link}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -105,11 +105,11 @@ export default function BeTheFirst() {
                   border border-[#3e8916]  
                   rounded  
                   hover:bg-[#3e8916] hover:border-[#3e8916]  
-                  transition-colors
+                  transition-colors cursor-pointer
                 "
               >
                 Apply Now
-              </a>
+              </button>
             </div>
           ))}
         </div>
