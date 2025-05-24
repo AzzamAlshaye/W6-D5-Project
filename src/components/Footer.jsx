@@ -161,7 +161,7 @@ export default function Footer() {
       </div>
 
       {/* Ratings */}
-      <div className="w-full max-w-8xl px-35 mt-8">
+      <div className="w-full max-w-8xl lg:px-35 mt-8">
         <ul className="flex justify-center lg:justify-start gap-6">
           <li>
             <img
@@ -174,7 +174,7 @@ export default function Footer() {
             <img
               src="ESRBCert.png"
               alt="ESRB Cert"
-              className="h-12 inline-block"
+              className="h-12  inline-block"
             />
           </li>
         </ul>

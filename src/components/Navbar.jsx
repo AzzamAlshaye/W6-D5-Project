@@ -128,10 +128,7 @@ export default function NavBar() {
                 {supportOpen && (
                   <ul className="absolute top-full left-0 mt-2 w-48 bg-black ring-1 ring-white/20 space-y-1 p-3">
                     <li>
-                      <Link
-                        to="/support-home"
-                        className="block hover:underline"
-                      >
+                      <Link to="/support" className="block hover:underline">
                         Support Home
                       </Link>
                     </li>

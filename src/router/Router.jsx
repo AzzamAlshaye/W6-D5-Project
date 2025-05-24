@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import HomePage from "../pages/home-page/HomePage-Container";
 import AboutUs from "../pages/About-Us/AboutUs";
 import Jobs from "../pages/Jobs-page/Jobs";
-import SupportHome from "../pages/SupportHome";
+import SupportHome from "../pages/support-page/SupportHome";
 
 function RootLayout() {
   return (
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "about-us", element: <AboutUs /> },
       { path: "jobs", element: <Jobs /> },
-      { path: "support-home", element: <SupportHome /> },
+      { path: "support", element: <SupportHome /> },
     ],
   },
 ]);
