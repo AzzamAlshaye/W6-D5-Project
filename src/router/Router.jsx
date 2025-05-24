@@ -5,7 +5,7 @@ import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HomePage from "../pages/home-page/HomePage-Container";
 import AboutUs from "../pages/About-Us/AboutUs";
-import Jobs from "../pages/Jobs";
+import Jobs from "../pages/Jobs-page/Jobs";
 import SupportHome from "../pages/SupportHome";
 
 function RootLayout() {
