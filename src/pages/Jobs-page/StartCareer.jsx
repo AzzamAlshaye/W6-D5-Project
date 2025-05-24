@@ -50,12 +50,12 @@ const categories = [
 
 export default function StartCareer() {
   return (
-    <section id="start-career" className="bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="start-career" className="bg-[#121212] text-white py-16">
+      <div className="max-w-8xl mx-auto px-4 xl:px-50">
         <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">
           START YOUR GAME CHANGING CAREER
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {categories.map((cat, idx) => (
             <a
               key={idx}
