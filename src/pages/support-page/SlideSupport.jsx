@@ -121,10 +121,10 @@ export default function SlideSupport() {
               <img
                 src={s.logo}
                 alt=""
-                className="h-16 lg:h-24 object-contain mx-auto lg:mx-0"
+                className="h-16 lg:h-60 object-contain mx-auto lg:mx-0"
               />
             </div>
-            <div className="flex flex-col space-y-4 lg:space-y-6 lg:flex-row lg:space-x-12 lg:items-center">
+            <div className="flex flex-col space-y-4    ">
               {s.links.map((link, idx) => (
                 <button
                   key={idx}
